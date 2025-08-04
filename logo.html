@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Logo Converter</title>
+</head>
+<body>
+    <canvas id="logoCanvas" width="400" height="160"></canvas>
+    <script>
+        const canvas = document.getElementById('logoCanvas');
+        const ctx = canvas.getContext('2d');
+        
+        // Create gradient backgrounds
+        const grad1 = ctx.createLinearGradient(0, 0, 400, 0);
+        grad1.addColorStop(0, '#2c3e50');
+        grad1.addColorStop(1, '#e74c3c');
+        
+        const grad2 = ctx.createLinearGradient(0, 0, 100, 100);
+        grad2.addColorStop(0, '#667eea');
+        grad2.addColorStop(1, '#764ba2');
+        
+        // Background
+        ctx.fillStyle = 'white';
+        ctx.fillRect(0, 0, 400, 160);
+        
+        // Border
+        ctx.strokeStyle = grad1;
+        ctx.lineWidth = 4;
+        ctx.strokeRect(2, 2, 396, 156);
+        
+        // Tile pattern
+        ctx.fillStyle = grad2;
+        ctx.fillRect(30, 30, 40, 40);
+        
+        ctx.fillStyle = '#e74c3c';
+        ctx.fillRect(80, 30, 30, 30);
+        
+        ctx.fillStyle = '#f39c12';
+        ctx.fillRect(30, 80, 30, 30);
+        
+        ctx.fillStyle = '#27ae60';
+        ctx.fillRect(80, 80, 24, 24);
+        
+        // Text
+        ctx.fillStyle = '#2c3e50';
+        ctx.font = 'bold 32px Arial';
+        ctx.fillText('Rishabhdev', 120, 50);
+        
+        ctx.fillStyle = '#e74c3c';
+        ctx.font = '24px Arial';
+        ctx.fillText('Marbles & Tiles', 120, 80);
+        
+        // Decorative line
+        ctx.strokeStyle = '#e74c3c';
+        ctx.lineWidth = 4;
+        ctx.beginPath();
+        ctx.moveTo(120, 100);
+        ctx.lineTo(360, 100);
+        ctx.stroke();
+        
+        // Tagline
+        ctx.fillStyle = '#6c757d';
+        ctx.font = '16px Arial';
+        ctx.fillText('Premium Quality • Trusted Service', 120, 130);
+        
+        // Convert to data URL
+        const dataURL = canvas.toDataURL('image/png');
+        console.log('PNG Data URL:', dataURL);
+        
+        // Create download link
+        const link = document.createElement('a');
+        link.download = 'rishabhdev-logo.png';
+        link.href = dataURL;
+        link.textContent = 'Download Logo';
+        link.style.display = 'block';
+        link.style.margin = '20px';
+        link.style.padding = '10px';
+        link.style.backgroundColor = '#e74c3c';
+        link.style.color = 'white';
+        link.style.textDecoration = 'none';
+        link.style.borderRadius = '5px';
+        document.body.appendChild(link);
+    </script>
+</body>
+</html> 

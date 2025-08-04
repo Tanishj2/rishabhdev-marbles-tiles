@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Logo Test</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        .test-section { margin: 20px 0; padding: 20px; border: 1px solid #ccc; }
+        img { max-width: 300px; border: 1px solid #ddd; margin: 10px; }
+        .error { color: red; }
+        .success { color: green; }
+    </style>
+</head>
+<body>
+    <h1>Logo Loading Test</h1>
+    
+    <div class="test-section">
+        <h2>SVG Logo Test</h2>
+        <img src="logo.svg" alt="SVG Logo" onload="this.nextElementSibling.innerHTML='✅ SVG loaded successfully'" onerror="this.nextElementSibling.innerHTML='❌ SVG failed to load'">
+        <div id="svg-status"></div>
+    </div>
+    
+    <div class="test-section">
+        <h2>PNG Logo Test</h2>
+        <img src="logo.png" alt="PNG Logo" onload="this.nextElementSibling.innerHTML='✅ PNG loaded successfully'" onerror="this.nextElementSibling.innerHTML='❌ PNG failed to load'">
+        <div id="png-status"></div>
+    </div>
+    
+    <div class="test-section">
+        <h2>File Check</h2>
+        <p>Current directory: <span id="current-dir"></span></p>
+        <p>Files in directory:</p>
+        <ul id="file-list"></ul>
+    </div>
+    
+    <script>
+        // Check current directory
+        document.getElementById('current-dir').textContent = window.location.href;
+        
+        // List files (this won't work due to browser security, but we can try)
+        console.log('Current URL:', window.location.href);
+        console.log('Base URL:', window.location.origin);
+        console.log('Pathname:', window.location.pathname);
+    </script>
+</body>
+</html> 

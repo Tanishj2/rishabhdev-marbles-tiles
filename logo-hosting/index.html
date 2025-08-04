@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rishabhdev Marbles & Tiles - Logo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: #f8f9fa;
+            text-align: center;
+        }
+        .logo-container {
+            background: white;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            margin: 20px auto;
+            max-width: 600px;
+        }
+        .logo {
+            margin: 20px 0;
+        }
+        h1 {
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+        p {
+            color: #6c757d;
+            margin-bottom: 20px;
+        }
+        .download-btn {
+            background: #e74c3c;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin: 10px;
+            transition: background 0.3s ease;
+        }
+        .download-btn:hover {
+            background: #c0392b;
+        }
+    </style>
+</head>
+<body>
+    <div class="logo-container">
+        <h1>Rishabhdev Marbles & Tiles</h1>
+        <p>Professional Logo</p>
+        
+        <div class="logo">
+            <svg width="400" height="160" viewBox="0 0 400 160" xmlns="http://www.w3.org/2000/svg">
+                <defs>
+                    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" style="stop-color:#2c3e50;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#e74c3c;stop-opacity:1" />
+                    </linearGradient>
+                    <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
+                        <stop offset="0%" style="stop-color:#667eea;stop-opacity:1" />
+                        <stop offset="100%" style="stop-color:#764ba2;stop-opacity:1" />
+                    </linearGradient>
+                </defs>
+                
+                <!-- Background rectangle -->
+                <rect x="0" y="0" width="400" height="160" rx="20" fill="white" stroke="url(#grad1)" stroke-width="4"/>
+                
+                <!-- Tile pattern icon -->
+                <g transform="translate(30, 30)">
+                    <!-- Main tile -->
+                    <rect x="0" y="0" width="40" height="40" fill="url(#grad2)" rx="4"/>
+                    <!-- Smaller tiles -->
+                    <rect x="50" y="0" width="30" height="30" fill="#e74c3c" rx="4"/>
+                    <rect x="0" y="50" width="30" height="30" fill="#f39c12" rx="4"/>
+                    <rect x="50" y="50" width="24" height="24" fill="#27ae60" rx="4"/>
+                </g>
+                
+                <!-- Text -->
+                <text x="120" y="50" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#2c3e50">Rishabhdev</text>
+                <text x="120" y="80" font-family="Arial, sans-serif" font-size="24" fill="#e74c3c">Marbles & Tiles</text>
+                
+                <!-- Decorative line -->
+                <line x1="120" y1="100" x2="360" y2="100" stroke="#e74c3c" stroke-width="4"/>
+                
+                <!-- Tagline -->
+                <text x="120" y="130" font-family="Arial, sans-serif" font-size="16" fill="#6c757d">Premium Quality • Trusted Service</text>
+            </svg>
+        </div>
+        
+        <div>
+            <a href="logo.svg" class="download-btn" download>Download SVG Logo</a>
+            <a href="logo.png" class="download-btn" download>Download PNG Logo</a>
+        </div>
+        
+        <p style="margin-top: 30px; font-size: 14px;">
+            <strong>Direct Image URLs:</strong><br>
+            SVG: <code>https://yourusername.github.io/logo-hosting/logo.svg</code><br>
+            PNG: <code>https://yourusername.github.io/logo-hosting/logo.png</code>
+        </p>
+    </div>
+</body>
+</html> 

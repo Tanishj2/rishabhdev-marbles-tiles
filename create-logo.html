@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Logo PNG</title>
+</head>
+<body>
+    <canvas id="logoCanvas" width="300" height="80"></canvas>
+    <br>
+    <button onclick="downloadLogo()">Download PNG Logo</button>
+    
+    <script>
+        const canvas = document.getElementById('logoCanvas');
+        const ctx = canvas.getContext('2d');
+        
+        // Background
+        ctx.fillStyle = 'white';
+        ctx.fillRect(0, 0, 300, 80);
+        
+        // Border
+        const gradient = ctx.createLinearGradient(0, 0, 300, 0);
+        gradient.addColorStop(0, '#2c3e50');
+        gradient.addColorStop(1, '#e74c3c');
+        ctx.strokeStyle = gradient;
+        ctx.lineWidth = 3;
+        ctx.strokeRect(1.5, 1.5, 297, 77);
+        
+        // Tile pattern
+        const tileGradient = ctx.createLinearGradient(20, 20, 80, 80);
+        tileGradient.addColorStop(0, '#667eea');
+        tileGradient.addColorStop(1, '#764ba2');
+        
+        ctx.fillStyle = tileGradient;
+        ctx.fillRect(20, 20, 30, 30);
+        
+        ctx.fillStyle = '#e74c3c';
+        ctx.fillRect(55, 20, 22, 22);
+        
+        ctx.fillStyle = '#f39c12';
+        ctx.fillRect(20, 55, 22, 22);
+        
+        ctx.fillStyle = '#27ae60';
+        ctx.fillRect(55, 55, 18, 18);
+        
+        // Text
+        ctx.fillStyle = '#2c3e50';
+        ctx.font = 'bold 24px Arial';
+        ctx.fillText('Rishabhdev', 80, 35);
+        
+        ctx.fillStyle = '#e74c3c';
+        ctx.font = '16px Arial';
+        ctx.fillText('Marbles & Tiles', 80, 55);
+        
+        // Line
+        ctx.strokeStyle = '#e74c3c';
+        ctx.lineWidth = 3;
+        ctx.beginPath();
+        ctx.moveTo(80, 65);
+        ctx.lineTo(270, 65);
+        ctx.stroke();
+        
+        // Tagline
+        ctx.fillStyle = '#6c757d';
+        ctx.font = '10px Arial';
+        ctx.fillText('Premium Quality • Trusted Service', 80, 75);
+        
+        function downloadLogo() {
+            const link = document.createElement('a');
+            link.download = 'logo.png';
+            link.href = canvas.toDataURL();
+            link.click();
+        }
+    </script>
+</body>
+</html> 
