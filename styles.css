@@ -936,6 +936,17 @@ body {
 }
 
 @media (max-width: 768px) {
+    .nav-logo h1 {
+        font-size: 1.2rem;
+        font-weight: 600;
+        color: #2c3e50;
+        margin: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 200px;
+    }
+    
     .nav-menu {
         position: fixed;
         left: -100%;
@@ -1014,6 +1025,17 @@ body {
 }
 
 @media (max-width: 480px) {
+    .nav-logo h1 {
+        font-size: 1rem;
+        font-weight: 600;
+        color: #2c3e50;
+        margin: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 150px;
+    }
+    
     .hero h1 {
         font-size: 2rem;
     }
