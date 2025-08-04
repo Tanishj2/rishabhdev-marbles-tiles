@@ -37,8 +37,17 @@
         {
           "key": "X-XSS-Protection",
           "value": "1; mode=block"
+        },
+        {
+          "key": "X-Requested-With",
+          "value": "XMLHttpRequest"
         }
       ]
     }
-  ]
+  ],
+  "functions": {
+    "api/disable-app-redirect.js": {
+      "runtime": "nodejs18.x"
+    }
+  }
 } 
