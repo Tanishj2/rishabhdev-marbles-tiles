@@ -44,10 +44,5 @@
         }
       ]
     }
-  ],
-  "functions": {
-    "api/disable-app-redirect.js": {
-      "runtime": "nodejs18.x"
-    }
-  }
+  ]
 } 
