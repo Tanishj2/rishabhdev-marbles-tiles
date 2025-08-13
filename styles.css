@@ -54,23 +54,23 @@ body {
     transform: scale(1.05);
 }
 
-.logo-text h2 {
-    color: #2c3e50;
-    font-size: 1.8rem;
+.logo-text {
+    font-size: 1.5rem;
     font-weight: 700;
+    color: #2c3e50;
     margin: 0;
+    transition: color 0.3s ease;
 }
 
-.logo-text span {
+.logo-text:hover {
     color: #e74c3c;
-    font-size: 0.9rem;
-    font-weight: 500;
 }
 
-.footer-logo-text h3 {
-    color: #e74c3c;
-    margin-bottom: 1rem;
+.footer-logo-text {
+    color: #fff;
+    font-size: 1.3rem;
     font-weight: 600;
+    margin-bottom: 1rem;
 }
 
 .nav-menu {
@@ -977,6 +977,11 @@ body {
         max-width: 150px;
     }
     
+    .logo-text {
+        font-size: 1.2rem;
+        font-weight: 600;
+    }
+    
     .nav-menu {
         position: fixed;
         left: -100%;
@@ -1069,6 +1074,11 @@ body {
         height: 35px;
         width: auto;
         max-width: 120px;
+    }
+    
+    .logo-text {
+        font-size: 1rem;
+        font-weight: 600;
     }
     
     .hero h1 {
