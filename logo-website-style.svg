@@ -1,0 +1,29 @@
+<svg width="400" height="120" viewBox="0 0 400 120" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Website primary dark color -->
+    <linearGradient id="darkColor" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2c3e50;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#34495e;stop-opacity:1" />
+    </linearGradient>
+    <!-- Website accent color -->
+    <linearGradient id="accentColor" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#e74c3c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c0392b;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Logo Icon (Diamond of 4 squares) -->
+  <g transform="translate(50, 20)">
+    <!-- Dark squares -->
+    <rect x="0" y="0" width="40" height="40" fill="url(#darkColor)" transform="rotate(45 20 20) translate(-14.14 -14.14)"/>
+    <rect x="40" y="0" width="40" height="40" fill="url(#darkColor)" transform="rotate(45 60 20) translate(-14.14 -14.14)"/>
+    <rect x="0" y="40" width="40" height="40" fill="url(#darkColor)" transform="rotate(45 20 60) translate(-14.14 -14.14)"/>
+    
+    <!-- Accent square (top-right) -->
+    <rect x="40" y="40" width="40" height="40" fill="url(#accentColor)" transform="rotate(45 60 60) translate(-14.14 -14.14)"/>
+  </g>
+
+  <!-- Text -->
+  <text x="150" y="50" font-family="Arial, sans-serif" font-size="36" font-weight="bold" fill="#2c3e50">RISHABHDEV</text>
+  <text x="150" y="85" font-family="Arial, sans-serif" font-size="24" fill="#2c3e50">MARBLES & TILES</text>
+</svg> 
