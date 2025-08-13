@@ -1,0 +1,56 @@
+<svg width="400" height="120" viewBox="0 0 400 120" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Gradient definitions -->
+    <linearGradient id="tileGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2c3e50;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#3498db;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2980b9;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="accentGradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#e74c3c;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#c0392b;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Tile pattern -->
+    <pattern id="tilePattern" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+      <rect x="0" y="0" width="20" height="20" fill="url(#tileGradient)" opacity="0.1"/>
+      <rect x="0" y="0" width="20" height="20" fill="none" stroke="#3498db" stroke-width="0.5" opacity="0.3"/>
+    </pattern>
+  </defs>
+  
+  <!-- Background -->
+  <rect x="0" y="0" width="400" height="120" rx="15" fill="white" stroke="url(#tileGradient)" stroke-width="3"/>
+  
+  <!-- Tile pattern background -->
+  <rect x="10" y="10" width="100" height="100" rx="10" fill="url(#tilePattern)"/>
+  
+  <!-- Logo icon - Tile stack -->
+  <g transform="translate(25, 25)">
+    <!-- Bottom tile -->
+    <rect x="0" y="15" width="50" height="8" rx="2" fill="url(#tileGradient)" opacity="0.8"/>
+    <!-- Middle tile -->
+    <rect x="5" y="8" width="40" height="8" rx="2" fill="url(#tileGradient)" opacity="0.9"/>
+    <!-- Top tile -->
+    <rect x="10" y="1" width="30" height="8" rx="2" fill="url(#tileGradient)"/>
+    
+    <!-- Marble texture lines -->
+    <line x1="15" y1="5" x2="35" y2="5" stroke="#ecf0f1" stroke-width="1" opacity="0.6"/>
+    <line x1="10" y1="12" x2="45" y2="12" stroke="#ecf0f1" stroke-width="1" opacity="0.6"/>
+    <line x1="5" y1="19" x2="50" y2="19" stroke="#ecf0f1" stroke-width="1" opacity="0.6"/>
+  </g>
+  
+  <!-- Business name -->
+  <text x="130" y="45" font-family="Arial, sans-serif" font-size="28" font-weight="bold" fill="#2c3e50">Rishabhdev</text>
+  <text x="130" y="70" font-family="Arial, sans-serif" font-size="18" fill="url(#accentGradient)">Marbles & Tiles</text>
+  
+  <!-- Tagline -->
+  <text x="130" y="90" font-family="Arial, sans-serif" font-size="12" fill="#7f8c8d">Premium Quality • Trusted Service</text>
+  
+  <!-- Decorative line -->
+  <line x1="130" y1="95" x2="380" y2="95" stroke="url(#accentGradient)" stroke-width="2"/>
+  
+  <!-- Quality badge -->
+  <circle cx="350" cy="35" r="15" fill="url(#accentGradient)"/>
+  <text x="350" y="40" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">✓</text>
+</svg> 

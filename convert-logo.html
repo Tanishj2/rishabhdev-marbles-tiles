@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Logo Converter</title>
+</head>
+<body>
+    <h2>Rishabhdev Marbles & Tiles - New Logo</h2>
+    
+    <!-- Display the new logo -->
+    <div style="margin: 20px 0;">
+        <h3>New Bold Industrial Logo:</h3>
+        <img src="logo-bold.svg" alt="Rishabhdev Marbles and Tiles Logo" style="border: 1px solid #ccc; padding: 10px;">
+    </div>
+    
+    <!-- Canvas for PNG conversion -->
+    <canvas id="logoCanvas" width="400" height="120" style="border: 1px solid #ccc;"></canvas>
+    
+    <br><br>
+    <button onclick="convertToPNG()">Download PNG Logo</button>
+    
+    <script>
+        function convertToPNG() {
+            const canvas = document.getElementById('logoCanvas');
+            const ctx = canvas.getContext('2d');
+            
+            // Create an image from the SVG
+            const img = new Image();
+            img.onload = function() {
+                // Draw the image on canvas
+                ctx.drawImage(img, 0, 0, 400, 120);
+                
+                // Convert to PNG and download
+                const link = document.createElement('a');
+                link.download = 'rishabhdev-logo.png';
+                link.href = canvas.toDataURL('image/png');
+                link.click();
+            };
+            img.src = 'logo-bold.svg';
+        }
+        
+        // Auto-convert when page loads
+        window.onload = function() {
+            setTimeout(convertToPNG, 1000);
+        };
+    </script>
+</body>
+</html> 
