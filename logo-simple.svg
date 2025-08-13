@@ -1,0 +1,32 @@
+<svg width="300" height="80" viewBox="0 0 300 80" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect x="0" y="0" width="300" height="80" rx="10" fill="white" stroke="#e67e22" stroke-width="2"/>
+  
+  <!-- Building icon -->
+  <g transform="translate(15, 15)">
+    <!-- Building base -->
+    <rect x="5" y="25" width="40" height="25" fill="#2c3e50"/>
+    
+    <!-- Building top -->
+    <rect x="8" y="15" width="34" height="10" fill="#e67e22"/>
+    
+    <!-- Roof -->
+    <polygon points="8,15 25,5 42,15" fill="#e67e22"/>
+    
+    <!-- Windows -->
+    <rect x="12" y="30" width="5" height="5" fill="#ecf0f1"/>
+    <rect x="22" y="30" width="5" height="5" fill="#ecf0f1"/>
+    <rect x="32" y="30" width="5" height="5" fill="#ecf0f1"/>
+    
+    <!-- Door -->
+    <rect x="20" y="40" width="10" height="10" fill="#ecf0f1"/>
+  </g>
+  
+  <!-- Business name -->
+  <text x="80" y="35" font-family="Arial, sans-serif" font-size="20" font-weight="bold" fill="#2c3e50">Rishabhdev</text>
+  <text x="80" y="55" font-family="Arial, sans-serif" font-size="14" fill="#e67e22">Marbles & Tiles</text>
+  
+  <!-- Quality badge -->
+  <circle cx="270" cy="25" r="12" fill="#e67e22"/>
+  <text x="270" y="30" font-family="Arial, sans-serif" font-size="12" font-weight="bold" fill="white" text-anchor="middle">✓</text>
+</svg> 
