@@ -456,7 +456,7 @@ if (chatToggle) {
 // Update WhatsApp link with correct number
 const whatsappLink = document.querySelector('.whatsapp-float a');
 if (whatsappLink) {
-    whatsappLink.href = 'https://wa.me/919414646245';
+    whatsappLink.href = 'https://wa.me/919413923745';
 }
 
 console.log('Rishabhdev Marbles & Tiles website loaded successfully!'); 
